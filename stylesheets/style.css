@@ -15,7 +15,7 @@
 @import url("flexslider.css");
 @import url("shortcodes.css");
 @import url("../../../css.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 /**
   *	Reset
   *	Repeatable Patterns
@@ -239,7 +239,7 @@ input[type="submit"] {
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
-    padding: 15px 45px;
+    /* padding: 15px 45px; */
     -webkit-border-radius: 20px;
 	        border-radius: 20px;
     background-color: #e8280b;
@@ -2926,3 +2926,189 @@ footer a:hover {
 
 
 	
+.second-menu .row{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-outlay{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #e36e28;
+    padding: 15px 15px;
+    width: auto;
+    transition: ease-in;
+}
+
+.box-outlay i{
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.box-outlay p{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #000;
+	font-size: 15px;
+    
+}
+.box-outlay .dropdown-item{
+	font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #000;
+	font-size: 15px;
+}
+.box-outlay:hover{
+    background-color: #e36e28;
+    color: white ;
+    transition: ease-in 0.3s;
+}
+
+.box-outlay button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* *********************   Testimonial start   *********************** */
+
+.testimonial{
+	padding: 50px 0;
+  position: relative;
+}
+
+.testimonial:after{
+  position: absolute;
+  content:'';
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(0.44turn, white 50%,var(--main-color) 50%);
+  z-index: -1;
+}
+
+.square{
+    position: absolute;
+    top:10px;
+    left:-140px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--main-color);
+    transform: rotate(-35deg);
+}
+
+.square2{
+    position: absolute;
+    top:130px;
+    right:300px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--main-color);
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.testimonial .title,
+.testimonial .subtitle{
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.testimonial .subtitle{
+	color:var(--main-color)!important;
+}
+
+.testimonial .testimonial-person{
+    max-width: 130px;
+    border-radius: 999px;
+    border:4px solid var(--main-color);
+}
+
+.testimonial .testimonial-rating{
+    padding-top: 20px;
+}
+
+.testimonial .testimonial-say{
+    padding:20px;
+	padding-bottom: 0;
+    margin: 0;
+	font-size: 20px;
+	font-weight:600;
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+.testimonial .para{
+	margin:20px auto;
+	padding: 0 20px;
+	max-width: 800px;
+    font-weight: 500;
+	font-size: 14px;
+    letter-spacing: .1px;
+}
+
+.testimonial .testimonial-name{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bold-color);
+}
+
+.testimonial .swiper-container {
+  margin:0 auto;
+	width: 80%;
+	height: 100%;
+  background:var(--title-color);
+  box-shadow: 0 10px 20px rgba(0,0,0,.5);
+  position: relative;
+  }
+
+.testimonial .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	height: 450px;
+	/* background: #fff; */
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+
+  .testimonial .gallbutton{
+	  margin-top: 10px;
+  }
+
+	.testimonial .testimonial-star{
+		max-width: 20px;
+	}
+
+	.swiper-pagination-bullet{
+		margin: 0 5px!important;
+		width: 10px;
+		height: 10px;
+		background: var(--main-color);
+	}
+
+/* *****   Testimonial end   ********* */
+
+
+
+
+
+
