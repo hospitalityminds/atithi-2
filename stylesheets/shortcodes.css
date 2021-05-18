@@ -10,7 +10,9 @@
   * Flat Tabs
   * 
 */
-
+body{
+    overflow-x: hidden;
+}
 .notification_ok, .fancybox:before, .flat-pricing:hover .pricing-box .flat-button,.client .content-client .text a:hover,
 .iconbox.style2 .box-header i, .flat-pricing.active .pricing-box .flat-button,  .flat-product .rate-product .info-product a:hover, .flat-client h6 a:hover, .flat-product .rate-product .review:hover {
     color: #ea240a;
@@ -648,10 +650,17 @@ section.flat-row.section-product {
 
 /* Flat-search */
 .flat-formsearch {
+     text-align:center;
     position: absolute;
-    left: 0;
+    left: 50%;
     top: -263px;
     width: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.flat-formsearch input{
+    width:400px!important;
+    margin-right:20px!important;
 }
 
 .flat-formsearch .search-form {
@@ -666,6 +675,30 @@ section.flat-row.section-product {
     float: left;
     width: 26.8%;
     position: relative;   
+}
+
+
+@media (max-width:768px){
+    /* Flat-search */
+    .flat-formsearch {
+    position: absolute;
+    left: 50%;
+    bottom:40px !important;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    }
+
+    .form-submit{
+     
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .flat-formsearch input{
+    width:400px!important;
+    margin-right:20px!important;
+    }
 }
 
 .search-form span.input-location {

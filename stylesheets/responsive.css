@@ -447,7 +447,7 @@
 	.flat-formsearch {
 		position: relative;
 		top: 0;
-		background-color: #f7f7f7;
+		/* background-color: #f7f7f7; */
 	}
 
 	.content-listing .comments-area article .comment-text .flat-start {

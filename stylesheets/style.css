@@ -2929,17 +2929,18 @@ footer a:hover {
 .second-menu .row{
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
 .box-outlay{
     display: flex;
+
     align-items: center;
     border-radius: 15px;
     border: 1px solid #e36e28;
-    padding: 15px 15px;
-    width: auto;
+    padding: 20px 20px;
+    width:auto;
     transition: ease-in;
 }
 
@@ -3106,9 +3107,118 @@ footer a:hover {
 	}
 
 /* *****   Testimonial end   ********* */
+/*******************Floating btn**********************/
+.demo .button {
+	position:fixed;
+	position:fixed;
+	width:120px;
+	height:110px;
+	top:150px;
+	right:40px;
+	border: 1px transparent;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	color: #eeeeee;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 20px;
+	padding: 8px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 20px;
+	-webkit-animation: glowing 1300ms infinite;
+	-moz-animation: glowing 1300ms infinite;
+	-o-animation: glowing 1300ms infinite;
+	animation: glowing 1300ms infinite;
+  }
+  @-webkit-keyframes glowing {
+	0% {
+	  background-color: #db5e27;
+	  -webkit-box-shadow: 0 0 3px #db5e27;
+	}
+	50% {
+	  background-color: #f38829;
+	  -webkit-box-shadow: 0 0 15px #f38829;
+	}
+	100% {
+	  background-color: #db5e27;
+	  -webkit-box-shadow: 0 0 3px #db5e27;
+	}
+  }
+  @keyframes glowing {
+	0% {
+	  background-color: #db5e27;
+	  box-shadow: 0 0 3px #db5e27;
+	}
+	50% {
+	  background-color: #f38829;
+	  box-shadow: 0 0 15px #f38829;
+	}
+	100% {
+	  background-color: #db5e27;
+	  box-shadow: 0 0 3px #db5e27;
+	}
+  }
+  .svg-btn {
+	display: block;
+	width: 230px;
+	height: 230px;
+	margin-left: 10px;
+  }
+  svg {
+	fill: blue;
+	-webkit-animation: glowing-polygon 1300ms infinite;
+	-moz-animation: glowing-polygon 1300ms infinite;
+	-o-animation: glowing-polygon 1300ms infinite;
+	animation: glowing-polygon 1300ms infinite;
+  }
+  @-webkit-keyframes glowing-polygon {
+	0% {
+	  fill: #db5e27;
+	  -webkit-filter: drop-shadow( 0 0 3px #db5e27);
+	}
+	50% {
+	  fill: #f38829;
+	  -webkit-filter: drop-shadow( 0 0 15px #f38829);
+	}
+	100% {
+	  fill: #db5e27;
+	  -webkit-filter: drop-shadow( 0 0 3px #db5e27);
+	}
+  }
+  @keyframes glowingPolygon {
+	0% {
+	  fill: #db5e27;
+	  filter: drop-shadow( 0 0 3px #db5e27);
+	}
+	50% {
+	  fill: #f38829;
+	  filter: drop-shadow( 0 0 15px #f38829);
+	}
+	100% {
+	  fill: #db5e27;
+	  filter: drop-shadow( 0 0 3px #db5e27);
+	}
+  }
 
 
+  @media (max-width:1024px)
+  {
+	  .demo .button{
+		  width:70px;
+		  height:65px;
+		  font-size: 13px;
+		  
+	  }
+ span .form-submit{
+	  margin-left: 0!important;
+  }
+  }
 
-
-
-
+span .form-submit{
+		
+	display: flex;
+	justify-content:center;
+	width:100%
+	}
