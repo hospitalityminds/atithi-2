@@ -155,6 +155,7 @@ section.flat-row.section-product {
 
 .title-section .title { 
     margin-bottom: 13px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title-section.style2 {
@@ -229,6 +230,7 @@ section.flat-row.section-product {
     font-size: 18px;
     color: #333333;
     margin-bottom: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flat-counter .numb-count {
@@ -270,6 +272,7 @@ section.flat-row.section-product {
     line-height: 30px;
     color: #888888;
     margin-bottom: 31px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flat-download button {
@@ -291,11 +294,12 @@ section.flat-row.section-product {
 }
 .section-product .title-section .title {
     margin-bottom: 19px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title-section .sub-title {
     font-weight: 300;
-    font-size: 20px;    
+    font-size: 10px;    
 }
 
 .section-product .load-more {
@@ -589,6 +593,7 @@ section.flat-row.section-product {
 
 .section-client .title-section .title {
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .client .featured-client {

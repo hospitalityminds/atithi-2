@@ -1,6 +1,5 @@
 
 
-
 @media only screen and (min-width: 1367px) and (max-width: 1900px) {
 	.listing-maps .widget-form {
 	    padding: 2.5% 1% 1% 1.7%;
@@ -144,6 +143,8 @@
 
 	#mainnav > ul > li > a {
 		margin: 0px 10px;
+		font-family: 'Poppins', sans-serif !important;
+
 	}
 
 	#mainnav > ul > li:first-child > a {
@@ -740,3 +741,29 @@
 	}
 }
 
+
+/*****************************************/
+@media(max-width:550px){
+    
+    .testimonial .swiper-slide {
+      height: 500px!important;
+    }
+
+    .testimonial .swiper-container {
+      margin:0 auto;
+      width: 90%;
+    }
+
+  }
+
+  @media (max-width:375px){
+	.testimonial .swiper-slide{
+	  height: 550px!important;
+	}
+  }
+
+  @media (max-width:320px){
+	.testimonial .swiper-slide{
+	  height: 600px!important;
+	}
+  }

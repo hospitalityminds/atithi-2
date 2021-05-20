@@ -4,7 +4,7 @@
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url("font-awesome.css");
 @import url("ionicons.css");
 @import url("themify-icons.css");
@@ -16,6 +16,7 @@
 @import url("shortcodes.css");
 @import url("../../../css.css");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
 /**
   *	Reset
   *	Repeatable Patterns
@@ -601,6 +602,7 @@ ul.flat-infomation li i {
 	font-size: 15px;
     line-height: 90px;
     margin: 0 18px 0 17px;   
+	font-family: 'Poppins', sans-serif !important;
 }
 
 #mainnav > ul > li:last-child > a {
@@ -618,6 +620,7 @@ ul.flat-infomation li i {
 	width: 0;
 	height: 2px;
 	background-color: #e8280b;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 #mainnav > ul > li:hover a::before, .blog-shortcode article.post .more-link a:hover:before, .textbox .text-content a:hover:before {
@@ -672,6 +675,7 @@ ul.flat-infomation li i {
     text-decoration: none;
     padding: 0 0 0 26px;
     line-height: 45px;
+	font-family: 'Poppins', sans-serif;
 }
 
 #mainnav ul.submenu > li > a:hover, #mainnav ul.submenu > li.active > a {
@@ -2780,6 +2784,7 @@ footer a:hover {
 	padding-bottom: 19px;
     margin-bottom: 30px;
     color: #FFF;
+	font-family: 'Poppins', sans-serif;
 }
 
 .footer .widget .widget-title::before {
@@ -3020,6 +3025,7 @@ footer a:hover {
 .testimonial .subtitle{
     margin: 0 auto 40px;
     text-align: center;
+	font-family: 'Poppins', sans-serif;
 }
 
 .testimonial .subtitle{
@@ -3226,9 +3232,21 @@ span .form-submit{
 /**********************************/
 .title-slide{
     font-size: 90px !important;
+	font-family: 'Poppins', sans-serif;
 }
 .sub-title{
-    font-size:35px !important
+    font-size:24px !important;
+	font-family: 'Poppins', sans-serif;
+}
+@media (max-width:768px){
+	.title-slide{
+		font-size: 30px !important;
+		
+	}
+	.sub-title{
+		font-size:15px !important;
+		
+	}
 }
 /**********************************/
 
@@ -3263,4 +3281,261 @@ span .form-submit{
 height: 100%;
 	
 	object-fit: cover;
+  }
+  /***********************Form--1*****************************/
+ /* *************************  Custom code  **************************** */
+
+
+.form-small-container{
+    width: 50%; 
+    margin: 50px auto;
+    background: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+
+
+.form-container{
+    padding:50px 0;
+	/* background: #e2eee0; */
+}
+
+.form-container h1{
+    text-align: center;
+    padding-bottom: 30px;
+	font-size: 34px;
+	font-weight: 700;
+	/* font-family: "Poppins", sans-serif; */
+	font-family: 'Newsreader', serif;
+}
+
+.form-container h2{
+    margin: 0px;
+	font-size: 34px;
+	font-weight: 700;
+	font-family: 'Newsreader', serif;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.mini-header{
+    padding-top: 50px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.form-header-container{
+    height: 80px ;
+}
+
+.form-container span{
+    color: var(--main-color);
+}
+
+.form-header-container .fh1{
+    position: absolute;
+    top: 0;
+    left:23%
+}
+
+.form-header-container .fh2{
+    position: absolute;
+    top: 40px;
+    left:36%
+}
+
+form{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.form-container .form-group{
+	/* height: 130px; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+	flex-direction: column;
+    padding: 25px 20px;
+    margin: 25px 0;
+	/* background: #e2eee0; */
+	box-shadow: 0px 0px 14px rgba(0,0,0,.2);
+	border-radius: 8px;
+	background: var(--title-color);
+}
+
+.form-container .form-group label{
+    font-weight: 600;
+    font-size: 14px;
+	color: var(--main-color);
+	font-family: "Poppins", sans-serif;
+	padding-bottom: 10px;
+}
+
+.form-container .form-row .col-md-6{
+    margin: 0
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea{
+    width: 95%;
+	height: 30px;
+	border:none;
+	border-bottom: 1px dotted var(--text-color);
+    margin: 0;
+	color: var(--bold-color);
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: .5px;
+	padding: 0!important;
+	font-family: "Poppins", sans-serif;
+}
+
+.form-container .form-group textarea{
+	height: 60px;
+	resize: none;
+}
+
+/* .form-container .form-row input{
+    width: 60%;
+} */
+
+.form-container .form-group input::placeholder{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+	color: var(--text-color);
+    opacity: .7;
+	font-family: "Poppins", sans-serif;
+}
+
+.form-container .form-group select{
+    /* width: 85%; */
+	padding: 5px 10p!important;
+	height: 40px!important;
+    border:2px solid #70757a;
+    margin: 0;
+}
+
+.button-container{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.submit-btn{
+    padding: 10px 50px;
+}
+
+.submit-btn:hover{
+    background:blue;
+}
+
+.form-container .form-row{
+  display: flex;
+  margin: 20px 0;
+}
+
+.form-container .form-row .form-group{
+	margin-right:10px;
+}
+
+/* .form-container .file-select label{
+    width: 35%;
+} */
+
+.form-container .file-select input{
+    border-bottom: none;
+	height: auto;
+}
+
+
+/* *********************  Rating start  ************************ */
+
+
+  #half-stars-example {
+	/* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+	/* make hover effect work properly in IE */
+	/* hide radio inputs */
+	/* set icon padding and size */
+	/* add padding and positioning to half star labels */
+	/* set default star color */
+	/* set color of none icon when unchecked */
+	/* if none icon is checked, make it red */
+	/* if any input is checked, make its following siblings grey */
+	/* make all stars orange on rating group hover */
+	/* make hovered input's following siblings grey on hover */
+	/* make none icon grey on rating group hover */
+	/* make none icon red on hover */
+  }
+
+  #half-stars-example .rating-group {
+	display: inline-flex;
+  }
+  #half-stars-example .rating__icon {
+	pointer-events: none;
+  }
+  #half-stars-example .rating__input {
+	position: absolute !important;
+	left: -9999px !important;
+  }
+  #half-stars-example .rating__label {
+	cursor: pointer;
+	/* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+	padding: 0 0.1em;
+	font-size: 2rem;
+  }
+  #half-stars-example .rating__label--half {
+	padding-right: 0;
+	margin-right: -0.6em;
+	z-index: 2;
+  }
+  #half-stars-example .rating__icon--star {
+	color: orange;
+  }
+  #half-stars-example .rating__icon--none {
+	color: #eee;
+  }
+  #half-stars-example .rating__input--none:checked + .rating__label .rating__icon--none {
+	color: red;
+  }
+  #half-stars-example .rating__input:checked ~ .rating__label .rating__icon--star {
+	color: #ddd;
+  }
+  #half-stars-example .rating-group:hover .rating__label .rating__icon--star,
+  #half-stars-example .rating-group:hover .rating__label--half .rating__icon--star {
+	color: orange;
+  }
+  #half-stars-example .rating__input:hover ~ .rating__label .rating__icon--star,
+  #half-stars-example .rating__input:hover ~ .rating__label--half .rating__icon--star {
+	color: #ddd;
+  }
+  #half-stars-example .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+	color: #eee;
+  }
+  #half-stars-example .rating__input--none:hover + .rating__label .rating__icon--none {
+	color: red;
+  }
+  
+
+
+
+  @media(max-width:768px){
+	.form-small-container{
+		width: 95%;
+	}
+
+	.form-container form{
+      width: 95%;
+	}
+  }
+  /**************************************************************/
+  /**************TABLE*****************/
+  .thead-dark{
+	  background-color: #212529;
+  }
+  .thead-dark th{
+	  color: white;
+  }
+  .rating-table{
+	font-family: 'Poppins', sans-serif;
   }
