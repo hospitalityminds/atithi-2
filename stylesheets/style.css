@@ -3195,7 +3195,7 @@ footer a:hover {
 	height: 230px;
 	margin-left: 10px;
   }
-  .welcome svg {
+  .demo svg {
 	fill: blue;
 	-webkit-animation: glowing-polygon 1300ms infinite;
 	-moz-animation: glowing-polygon 1300ms infinite;
