@@ -488,6 +488,10 @@ h6 { font-size: 16px; line-height: 16px; }
 
 .blog-shortcode article.post .content-post p {
 	line-height: 22px;
+	font-family: 'poppins';
+}
+.blog-shortcode article.post .content-post h3{
+	font-family: 'poppins';
 }
 
 .blog-shortcode article.post .more-link a {
@@ -523,10 +527,12 @@ h6 { font-size: 16px; line-height: 16px; }
 ul.flat-infomation li {
     color: #9c9c9c;
     line-height: 30px;
+	font-family: 'Poppins', sans-serif;
 }
 
 ul.flat-infomation li i {
 	margin-right: 7px;
+
 }
 
 .widget .flat-infomation li {
@@ -1237,6 +1243,7 @@ section.main-content.blog-single {
 -------------------------------------------------------------- */
 .flat-popupform .modal-dialog {
 	max-width: 400px;
+	font-family: 'Poppins, sans-serif';;
 }
 
 .modal {
@@ -2740,6 +2747,9 @@ footer {
 
 footer a, footer p, .bottom .copyright a:hover {
 	color: #9c9c9c;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+
 }
 
 footer a:hover {
@@ -3065,6 +3075,7 @@ footer a:hover {
     font-weight: 500;
 	font-size: 14px;
     letter-spacing: .1px;
+	font-family: 'Poppins', sans-serif;
 }
 
 .testimonial .testimonial-name{
@@ -3072,6 +3083,10 @@ footer a:hover {
     text-transform: uppercase;
     font-weight: 600;
     color: var(--bold-color);
+	font-family: 'Poppins', sans-serif;
+}
+.testimonial h6{
+	font-size: 14px;
 }
 
 .testimonial .swiper-container {
@@ -3180,7 +3195,7 @@ footer a:hover {
 	height: 230px;
 	margin-left: 10px;
   }
-  svg {
+  .welcome svg {
 	fill: blue;
 	-webkit-animation: glowing-polygon 1300ms infinite;
 	-moz-animation: glowing-polygon 1300ms infinite;
@@ -3326,7 +3341,7 @@ height: 100%;
 }
 
 .mini-header{
-    padding-top: 50px;
+    
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -3364,7 +3379,7 @@ form{
     /* align-items: center; */
 	flex-direction: column;
     padding: 25px 20px;
-    margin: 25px 0;
+    /* margin: 25px 0; */
 	/* background: #e2eee0; */
 	box-shadow: 0px 0px 14px rgba(0,0,0,.2);
 	border-radius: 8px;
@@ -3459,7 +3474,7 @@ form{
 	height: auto;
 }
 .work_wrapper{
-	padding: 25px 20px;
+	padding: 25px 30px;
     margin: 25px 0;
 	/* background: #e2eee0; */
 	box-shadow: 0px 0px 14px rgba(0,0,0,.2);
@@ -3484,7 +3499,7 @@ form{
   }
   #id_work_days span {
 	display: inline-block;
-	padding: 15px 28px;
+	padding: 15px 18px;
      font-size: 16px;
 	border: 2px solid #ea7a27;
 	border-radius: 3px;
@@ -3889,3 +3904,332 @@ form{
 }
 
 /* ****  Section 1 end  ***** */
+/* ****  Review-submit-btn  ***** */
+/* The Modal (background) */
+.atithi-review .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .atithi-review  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .atithi-review   .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .atithi-review  .close:hover,
+  .atithi-review  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  /* **************************   PopUp Block  ***************************** */
+
+#packages{
+	cursor: pointer;
+  }
+  
+  #popUpMain{
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.2);
+	  z-index: 10001;
+	  padding: 20px;
+	  display: none;
+  }
+  
+  #cancel{
+	position: absolute;
+	  top: 20px;
+	  right: 30px;
+	  font-size: 20px;
+	  cursor: pointer;
+  }
+  
+  .active{
+	display: block!important;
+  }
+  
+  .disable{
+	display: none!important;
+  }
+  
+  #popup{
+	  width: 100%;
+	  max-width: 40%;
+	  height: 500px;
+	  padding: 1% 1%;
+	  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), transparent center center no-repeat; */
+	  background-color: var(--title-color);
+	  background-size: cover;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+  }
+  
+  #popup{
+	 display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  border-radius: 20px;
+  }
+  
+  #popup h1{
+	  font-size: 30px;
+	  font-family: 'Merriweather', serif;
+	  font-weight: 700;
+	  padding:20px 0 30px;
+  }
+  
+  #popup form{
+	  margin: 0 auto;
+	  width: 95%;
+  }
+  
+  #popup form input{
+	  width: 100%;
+	  padding: 15px 15px;
+	  margin-bottom: 20px;    
+	  border:none;
+	  background: #f0f0f0;
+	  outline: none;
+	  font-size: 14px;
+	  font-weight: 600;
+  }
+  
+  #popup form input::placeholder{
+	  font-size: 15px;
+	  font-weight: 600;
+	  font-family: 'Poppins', sans-serif;
+	  color: var(--bold-color);
+  }
+  
+  
+  #popup form .submit{
+	 margin-top: 10px;
+	  width: auto;
+	  padding: 10px 40px;
+	  border: none;
+	  background: var(--main-color);
+	  color: var(--title-color);
+	  font-weight: 700;
+	  text-transform: uppercase;
+	  border-radius: 50px;
+	  border:2px solid var(--main-color);
+	  transition: .3s ease-in;
+  }
+  
+  #popup form .submit:hover{
+	background: transparent;
+	color: var(--main-color);
+  }
+  
+  
+  
+   
+  
+  @media (max-width: 550px){
+	  #popup{
+		  max-width: 95%;
+		  height: 450px;
+	  }
+  
+	  .button-container .submitId{
+		padding:6px 18px;
+		font-size: 14px;
+	  }
+  }
+  /**********************************/
+  .atithi-rate-box h5{
+	  font-family: 'Poppins', sans-serif !important;
+  }
+  .atithi-rate-box .modal-dialog{
+	  border-radius: 20px !important;
+  }
+  .atithi-rate-box button{
+	font-family: 'Poppins', sans-serif !important;
+  }
+  
+/* **************************   Welcome start   *************************** */
+
+.welcome{
+    padding: 100px 0 80px;
+}
+
+.welcome .section-header h1{
+    text-align: center;
+    font-size: 50px;
+	font-family: "Nunito", sans-serif;
+}
+
+.welcome .section-header span{
+	color: var(--main-color);
+	font-family: 'Newsreader', serif;
+}
+
+.welcome .description{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.welcome .button-container{
+    padding-top: 50px;
+}
+
+.welcome .button-container .button{
+    padding: 14px 30px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    border-radius: 4px;
+}
+
+.welcome .button-container .button.active{
+    padding: 14px 30px;
+    background: var(--main-color);
+    color: var(--title-color);
+    margin-right: 20px;
+}
+
+.button-container .button:hover{
+    background: var(--main-color);
+    color: var(--title-color);
+}
+
+
+
+
+/* **************************   Course grid start   ************************** */
+
+.welcome{
+	padding: 50px 0;
+}
+
+.welcome .title{
+	margin-bottom: 30px;
+	margin-top: 0;
+	padding-bottom: 5px;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.welcome .subtitle{
+	text-align: center;
+	font-size:20px;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-family: 'Newsreader', serif;
+	color: var(--main-color);
+  }
+
+
+  .welcome .course-grid {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .welcome .course-grid .block {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 220px;
+    transition: .3s ease-in!important;
+    /* border-radius: 12px; */
+    z-index: 111;
+  }
+
+  .welcome .course-grid .img-container{
+      height: 65%;
+      display: grid;
+      place-items: center;
+  }
+
+  .welcome .course-grid .img-container img{
+      max-width: 60px;
+  }
+
+  .welcome .course-grid .img-container svg{
+      width: 60px;
+      height:60px;
+      fill: var(--main-color);
+  }
+
+  .course-grid .block h2 {
+    height: 35%;
+    padding:5px 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bold-color);
+    margin: 0;
+	line-height: 20px;
+    transition: .3s ease-in;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .course-grid .block:hover {
+    box-shadow: 0 2px 20px rgba(111, 172, 68,.3);
+    background: var(--main-color);
+  }
+  
+  .course-grid .block:hover h2 {
+    color: var(--title-color);
+  }
+
+  .course-grid .block:nth-child(1):hover {
+    background: #071e3d;
+  }
+  .course-grid .block:nth-child(2):hover {
+    background: #814f98;
+  }
+  .course-grid .block:nth-child(3):hover {
+    background: #4c7ac7;
+  }
+  .course-grid .block:nth-child(4):hover {
+    background: #5ba1ad;
+  }
+  .course-grid .block:nth-child(5):hover {
+    background: #ceb53f;
+  }
+  .course-grid .block:nth-child(6):hover {
+    background: #e87e32;
+  }
+
+  .course-grid .block:hover svg {
+    fill: var(--title-color);
+  }
+  
