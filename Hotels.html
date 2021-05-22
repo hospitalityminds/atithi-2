@@ -38,6 +38,20 @@
 </head>
 
 <body class="header_sticky">
+    <div id="popUpMain">
+        <div id="popup">
+          <i class="fas fa-times" id="cancel"></i>
+          <h1>Enter Atithi Details</h1>
+            <form action="#" method="POST">
+              <input type="text" name="name" required placeholder="Full Name">
+              
+              <input type="text" name="mobile" required placeholder="Mobile no">
+            
+    
+              <input type="submit" name="submit" value="submit" class="submit">
+            </form>
+        </div>
+     </div>
     <!-- Preloader -->
     <section class="loading-overlay">
         <div class="Loading-Page">
@@ -49,97 +63,105 @@
     <div class="boxed">
 
       
-        <!-- Header -->
-        <header id="header" class="header clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div id="logo" class="logo float-left">
-                            <a href="index.html" rel="home">
-                                <img src="images/logo.png" alt="image"
-                                   >
-                            </a>
-                        </div><!-- /.logo -->
-                        <div class="btn-menu">
-                            <span></span>
-                        </div><!-- //mobile menu button -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-9 " >
-                        <div class="nav-wrap">
-                            <nav id="mainnav" class="mainnav float-right">
-                                <ul class="menu">
-                                    <li class="home">
-                                        <a href="Hotels.html">Hotels</a>
-                                        
-                                    </li>
-                                    <li><a href="#">Homestays</a>
-                                      
-                                        <!-- /.submenu -->
-                                    </li>
-                                    <li><a href="blog.html">Campsites</a>
-                                        
-                                        <!-- /.submenu -->
-                                    </li>
-                                    <li><a href="page-about.html">Backpackers</a>
-                                        
-                                        <!-- /.submenu -->
-                                    </li>
-                                    <li><a href="#">Others</a>
-                                        <ul class="submenu">
-                                            <li><a href="view-rating.html">Treehouse</a>
-                                              
-                                            </li>
-                                            <li><a href="host-review-report.html">Igloos</a>
-                                               
-                                            </li>
-                                            <li><a href="listing-full.html">Houseboat</a>
-                                               
-                                            </li>
+    <!-- Header -->
+    <header id="header" class="header clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="logo" class="logo float-left">
+                        <a href="index.html" rel="home">
+                            <img src="images/logo.png" alt="image"
+                               >
+                        </a>
+                    </div><!-- /.logo -->
+                    <div class="btn-menu">
+                        <span></span>
+                    </div><!-- //mobile menu button -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-9 " >
+                    <div class="nav-wrap">
+                        <nav id="mainnav" class="mainnav float-right">
+                            <ul class="menu">
 
-                                        </ul>
-                                        <!-- /.submenu -->
-                                    </li>
-                                   <li> <a href="#">Atithi</a></li>
-                                    <li>
-                                        <a href="#" style="font-weight:600!important"><i class="fa fa-user-plus"></i> Log In</a>
-                                        <ul class="submenu">
-                                            <li>
-                                                <a data-toggle="modal" href="#popup_login">Atithi </a> 
-                                            </li>
-                                            <li>
-                                                <a data-toggle="modal" href="#popup_login">Host </a> 
-                                            </li>
+                                <li>
+                                    <a href="Host.html">Join as Host</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="Atithi.html">Join as Atithi</a>
+                                    
+                                </li>
+                                <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
+                        
+                                <!-- <li class="home">
+                                    <a href="Hotels.html">Hotels</a>
+                                    
+                                </li>
+                                <li><a href="#">Homestays</a>
+                                  
+                                </li>
+                                <li><a href="blog.html">Campsites</a>
+                                    
+                                </li>
+                                <li><a href="page-about.html">Backpackers</a>
+                                    
+                                </li>
+                                <li><a href="#">Others</a>
+                                    <ul class="submenu">
+                                        <li><a href="view-rating.html">Treehouse</a>
+                                          
+                                        </li>
+                                        <li><a href="host-review-report.html">Igloos</a>
+                                           
+                                        </li>
+                                        <li><a href="listing-full.html">Houseboat</a>
+                                           
+                                        </li>
 
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a style="font-weight:600!important" ><i class="fa fa-user-plus"></i> Sign Up</a>
-                                        <ul class="submenu">
-                                            <li>
-                                                <a  href="atithi-signup-short.html">Atithi </a> 
-                                            </li>
-                                            <li>
-                                                <a  href="host-signup-step1.html">Host </a> 
-                                            </li>
+                                    </ul>
+                                </li>
+                               <li> <a href="#">Atithi</a></li> -->
+                                <li>
+                                    <a href="#" style="font-weight:600!important"><i class="fa fa-user-plus"></i> Log In</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a data-toggle="modal" href="#popup_login">Atithi </a> 
+                                        </li>
+                                        <li>
+                                            <a data-toggle="modal" href="#popup_login">Host </a> 
+                                        </li>
 
-                                        </ul>
-                                    </li>
-                                    <!-- <input style="margin-left: 30px;" type="radio" id="Atithi" name="type" value="Atithi">
-                                <label for="Athithi">Athithi</label>
-                                <input style="margin-left: 20px;" type="radio" id="Host" name="type" value="Host">
-                                <label for="Athithi">Host</label> -->
-                                </ul><!-- /.menu -->
-                            </nav><!-- /.mainnav -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a style="font-weight:600!important" ><i class="fa fa-user-plus"></i> Sign Up</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a  href="atithi-signup-short.html">Atithi </a> 
+                                        </li>
+                                        <li>
+                                            <a  href="host-signup-step1.html">Host </a> 
+                                        </li>
 
-                            <!-- <div class="button-addlist float-right">
-                            <button type="button" class="flat-button" onclick="location.href='page-addlisting.html'">Add Listing</button>
-                         </div>  -->
-                        </div><!-- /.nav-wrap -->
-                    </div><!-- /.col-lg-8 -->
-                </div><!-- /.row -->
-            </div>
-        </header><!-- /.header -->
+                                    </ul>
+                                </li>
 
+                                <li><a href="Hotels.html"><i class="fab fa-whatsapp"></i></a> </li>
+                                <!-- <input style="margin-left: 30px;" type="radio" id="Atithi" name="type" value="Atithi">
+                            <label for="Athithi">Athithi</label>
+                            <input style="margin-left: 20px;" type="radio" id="Host" name="type" value="Host">
+                            <label for="Athithi">Host</label> -->
+                            </ul><!-- /.menu -->
+                        </nav><!-- /.mainnav -->
+
+                        <!-- <div class="button-addlist float-right">
+                        <button type="button" class="flat-button" onclick="location.href='page-addlisting.html'">Add Listing</button>
+                     </div>  -->
+                    </div><!-- /.nav-wrap -->
+                </div><!-- /.col-lg-8 -->
+            </div><!-- /.row -->
+        </div>
+    </header><!-- /.header -->
    
 
 
@@ -200,6 +222,11 @@
 
                     <section class=" tab-section active" id="c1" data-tab-content>    
                         <h1>t1</h1>
+                        <button type="button" class="btn btn-primary"id="packages">
+                           View my rating
+                          </button>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Atithi Rating</button>
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm1">Host Rating</button>
                     </section>
                 
                     <section class=" tab-section" id="c2" data-tab-content>    
@@ -231,166 +258,88 @@
 
 
 
-        <!-- Footer -->
-        <footer class="footer footer-widgets">
-            <div class="container">
+     <!-- Footer -->
+     <footer class="footer footer-widgets">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget widget_text widget_info">
+                        <h5 class="widget-title">About Us</h5>
+                        <div class="textwidget">
+                            <p>We at <b>ATITHIADVISOR</b> are providing a platform to share this other side of thestory. <b>ATITHIADVISOR</b> is primarily for all Stay Facility Providers in hospitality industrylike Hotels, Homestays, Campsites, Bagpackers’ Stays and unique experiencestays such as Treehouses, Igloos, Houseboats etc</p>
+                        </div><!-- /.textwidget -->
+                        <ul class="flat-infomation">
+                            <li><i class="fa fa-map-marker"></i>Mumbai India 401104</li>
+                            <li><i class="fa fa-phone"></i>+61 3 8376 6284</li>
+                        </ul>
+                    </div><!-- /.widget -->
+                </div><!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div id="nav_menu-2" class="widget widget_nav_menu">
+                        <h5 class="widget-title">Privacy Policy</h5>
+                        <div class="wrap-menufooter clearfix">
+                            <ul class="menu one-half">
+                                <li class="menu-item"><a href="#">About Us</a></li>
+                                <li class="menu-item"><a href="#">Advertise With Us</a></li>
+                                <li class="menu-item"><a href="#">Terms & conditions</a></li>
+                                <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                                <li class="menu-item"><a href="#">FAQs</a></li>
+                                <li class="menu-item"><a href="#">Career</a></li>
+                                <li class="menu-item"><a href="#">Connect with us</a></li>
+                                <li class="menu-item"><a href="#">Feedback</a></li>
+                            </ul>
+               
+                        </div>
+                    </div>
+                </div><!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div class="widget widget_listing">
+                        <h5 class="widget-title">Social Link</h5>
+                      <a href="#"><i class="fab fa-3x fa-whatsapp-square"></i></a>
+                      <a href="https://instagram.com/atithiadvisor?utm_medium=copy_link"><i class="fab fa-3x fa-instagram-square"></i></a>
+                     <a href="https://www.facebook.com/Atithiadvisor-106834144926185/"><i class="fab fa-3x fa-facebook-square"></i></a>
+                    </div>
+                </div><!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div class="widget widget_contact">
+                        <h5 class="widget-title"></h5>
+                     
+                    </div>
+                </div><!-- /.col-md-3 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+        <div class="container">
+            <div class="bottom">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="widget widget_text widget_info">
-                            <h5 class="widget-title">About Us</h5>
-                            <div class="textwidget">
-                                <p>Lorem ipsum dolor sit amet, luctus pos semper felis consectetuer hendrerit, im varius
-                                    enim, tellus tincidunt tellus est sed</p>
-                            </div><!-- /.textwidget -->
-                            <ul class="flat-infomation">
-                                <li><i class="fa fa-map-marker"></i>PO Box 16122 Collins Street West Vic-toria 8007
-                                    Australia</li>
-                                <li><i class="fa fa-phone"></i>+61 3 8376 6284</li>
-                            </ul>
-                        </div><!-- /.widget -->
-                    </div><!-- /.col-lg-3 -->
-
-                    <div class="col-lg-3">
-                        <div id="nav_menu-2" class="widget widget_nav_menu">
-                            <h5 class="widget-title">Privacy Policy</h5>
-                            <div class="wrap-menufooter clearfix">
-                                <ul class="menu one-half">
-                                    <li class="menu-item"><a href="#">About Us</a></li>
-                                    <li class="menu-item"><a href="#">Advertise</a></li>
-                                    <li class="menu-item"><a href="#">Terms & Ruler</a></li>
-                                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                                    <li class="menu-item"><a href="#">FAQs</a></li>
-                                    <li class="menu-item"><a href="#">Events</a></li>
-                                </ul>
-                                <ul class="menu one-half">
-                                    <li class="menu-item"><a href="#">Method Payment</a></li>
-                                    <li class="menu-item"><a href="#">Maintenance</a></li>
-                                    <li class="menu-item"><a href="#">Corporate Client</a></li>
-                                    <li class="menu-item"><a href="#">LearnPress</a></li>
-                                    <li class="menu-item"><a href="#">Release Status</a></li>
-                                </ul>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>Copyright © 2021. Designer by <a
+                                    href="../../user/AtithiAdvisor/portfolio.html">AtithiAdvisor</a>. All Rights Reserved.
+                            </p>
                         </div>
-                    </div><!-- /.col-lg-3 -->
-
-                    <div class="col-lg-3">
-                        <div class="widget widget_listing">
-                            <h5 class="widget-title">Popular Listing</h5>
-                            <ul>
-                                <li>
-                                    <div class="featured">
-                                        <a href="#" class="effect"><img src="images/flickr/7.jpg" alt="image"></a>
-                                    </div>
-                                    <div class="info-listing">
-                                        <h6><a href="#">Lincoln Square Steak</a></h6>
-                                        <div class="start-review">
-                                            <span class="flat-start">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                            <a href="#" class="review">12 Reviews</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="featured">
-                                        <a href="#" class="effect"><img src="images/flickr/8.jpg" alt="image"></a>
-                                    </div>
-                                    <div class="info-listing">
-                                        <h6><a href="#">Top 10 French coffe </a></h6>
-                                        <div class="start-review">
-                                            <span class="flat-start">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </span>
-                                            <a href="#" class="review">7 Reviews</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div><!-- /.col-lg-3 -->
-
-                    <div class="col-lg-3">
-                        <div class="widget widget_contact">
-                            <h5 class="widget-title">Quick Contact</h5>
-                            <ul class="clearfix">
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/1.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/2.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/3.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/4.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/5.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="effect">
-                                            <img src="images/flickr/6.jpg" alt="image">
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-            <div class="container">
-                <div class="bottom">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="copyright">
-                                <p>Copyright © 2017. Designer by <a
-                                        href="user/AtithiAdvisor/portfolio.html">AtithiAdvisor</a>. All Rights Reserved.
-                                </p>
-                            </div>
-                        </div><!-- /.col-md-12 -->
-                        <div class="col-lg-6">
-                            <div class="social-links float-right">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
+                    </div><!-- /.col-md-12 -->
+                    <div class="col-lg-6">
+                        <div class="social-links float-right">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+
+
+
+
+
+
+
         <div class="modal fade flat-popupform" id="popup_login">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -450,7 +399,50 @@
                 </div>
             </div>
         </div>
-
+      
+<!------------Atithi popup-------------->
+        <div class="modal atithi-rate-box fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                 
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><img src="images/logo.png" style="max-width: 36px;" alt="">
+                        Your Atithi Rating:   </h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 
+                </div>
+              </div> 
+          </div>
+        </div>
+        <!------------Host popup-------------->
+        <div class="modal atithi-rate-box fade bd-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                  <div class="modal-header">
+                   
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h5 class="modal-title" id="exampleModalLongTitle"><img src="images/logo.png" style="max-width: 36px;" alt="">
+                          Atithi Rating:   </h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" ><a href="view-rating.html">View Report</a></button>
+                   
+                  </div>
+                </div> 
+            </div>
+          </div>
         <!-- Go Top -->
         <a class="go-top effect-button">
             <i class="fa fa-angle-up"></i>
@@ -474,6 +466,7 @@
 
     <script src="javascript/main.js"></script>
     <script src="javascript/custom.js"></script>
+  
 
     <!-- Revolution Slider -->
     <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -490,6 +483,8 @@
     <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script src="javascript/app.js"></script>
 
 </body>
 
