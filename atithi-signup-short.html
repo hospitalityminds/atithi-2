@@ -34,7 +34,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+<style>
+    /* .form-container{
+        background-image: url(images/signup-background.jpg);
+        background-size: cover;
+       
+    } */
+</style>
 </head>
 
 <body class="header_sticky">
@@ -159,33 +165,33 @@
         <form>
 
              
-            <div class="form-group">
+            <div class="form-group col-lg-11 col-md-12">
                     <label for="exampleInputEmail1">Enter Name *</label>
+                    <input type="text" class="form-control" placeholder="" required>
+                </div>
+
+                <div class="form-group col-lg-11 col-md-12">
+                    <label for="exampleInputEmail1">Enter Address</label>
                     <input type="text" class="form-control" placeholder="">
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Address*</label>
-                    <input type="text" class="form-control" placeholder="">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="Name">State</label>
-                        <input type="email" name="fname">
+                <div class="form-row row">
+                    <div class="form-group col-lg-6 col-md-12">
+                        <label for="Name">State*</label>
+                        <input type="email" name="fname" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-lg-5 col-md-12">
                         <label for="Name">Pincode*</label>
                         <input type="text" name="lname">
                     </div>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+                <div class="form-row row">
+                    <div class="form-group col-lg-6 col-md-12">
                         <label for="Name">Enter Phone Number*</label>
                         <input type="text" placeholder="+91 000000000" name="lname" required  pattern="[1-9]{1}[0-9]{9}">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-lg-5 col-md-12">
                         <label for="Name">Mail Id</label>
                         <input type="email" placeholder="example@gmail.com" name="lname">
                     </div>
@@ -204,7 +210,7 @@
                   
 
                 <div class="button-container">
-                    <button type="submit" class="btn submit-btn">Submit</button>
+                    <button type="submit" class="btn submit-btn"><a href="atithi-signin.html">Submit</a></button>
                 </div>
             </form>
 

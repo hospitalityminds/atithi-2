@@ -271,8 +271,10 @@
             <div class="col-lg-3">
                      
                     <ul class="tabs">
-                        <li data-tab-target="#c1" class="active tab">My Profile</li>
-                        <li data-tab-target="#c2" class="tab">View My Rating</li>
+                        <li data-tab-target="#c1" class="active tab">Home</li>
+                        <li data-tab-target="#c2" class=" tab">My Profile</li>
+                        <li data-tab-target="#c3" class="tab">View My Rating</li>
+                        <li data-tab-target="#c4" class="tab">View Detailed rating </li>
                       
                    
                      
@@ -284,10 +286,26 @@
             <div class="col-lg-9">
                  
                 <div class="tab-content">
-
+                    <section class=" tab-section active" id="c1" data-tab-content>  
+                        <section class="welcome">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h1>Dear<span> Atithi </span></h1>
+                                </div>
+                       
+                                <p class="description">Welcome to Atithi Advisor, it gives us so much of pleasure to make this platform so rewarding for you all. One of its kind. Here at Athiti Advisor you can get everything that  you need before you check in to you. You can direct communicate with your hotel. Get incredible pre-check in offers and most important here your Host will review you based on your stay. This review will help you earn points which leads to more discounts and more unbelievable benefits. So what are you waiting for Sign up now and explore unlimited benefits. <strong>Super Atithi will get featured in our monthly magazine and He/she will get free Stay at any of partner HOST. </strong> </p>
+                       
+                                <div class="button-container">
+                                 
+                                    <a href="#" class="button">Click for Assistance</a>
+                                </div>
+                            </div>
+                        </section>
+                       
+                    </section>
                   
 <!--------------------------MY PROFILE----------------------------------->
-                    <section class=" tab-section active" id="c1" data-tab-content>    
+                    <section class=" tab-section " id="c2" data-tab-content>    
                       
        <!-- *******************************  Form start   **************************************** -->
 
@@ -297,48 +315,57 @@
         <h1 style="font-family: 'Poppins', sans-serif !important "><span style="color: #ea7a27;">ATITHI </span>Profile</h1>
 
       <form>
-      
-              <div class="form-group">
+              <div class="form-row row">
+             <div class="form-group col-lg-5 col-md-12">
+                <label for="exampleInputEmail1">Upload picture</label>
+                <input type="file" id="img" name="img" accept="image/*">
+                                       
+             </div>
+                <div class="form-group col-lg-6 col-md-12">
                   <label for="exampleInputEmail1">Enter Name *</label>
-                  <input type="text" class="form-control" placeholder="Enter Business name">
+                  <input type="text" class="form-control" placeholder="">
               </div>
-
-              <div class="form-group">
+            </div>
+               <div class="form-row row">
+              <div class="form-group col-lg-11 col-md-12 ">
                   <label for="exampleInputEmail1">Enter Address*</label>
-                  <input type="text" class="form-control" placeholder="Enter Business address">
+                  <input type="text" class="form-control" placeholder="">
               </div>
+            </div>
 
-              <div class="form-row">
-                  <div class="form-group col-md-6">
+              <div class="form-row row">
+                  <div class="form-group col-lg-5 col-md-12">
                       <label for="Name">State</label>
                       <input type="email" name="fname">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-lg-6 col-md-12">
                       <label for="Name">Pincode*</label>
                       <input type="text" name="lname">
                   </div>
               </div>
 
-              <div class="form-row">
-                  <div class="form-group col-md-6">
+              <div class="form-row row">
+                  <div class="form-group col-lg-5 col-md-12">
                       <label for="Name">Enter Phone Number*</label>
                       <input type="text" placeholder="+91 000000000" name="lname"  pattern="[1-9]{1}[0-9]{9}">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-lg-6 col-md-12">
                       <label for="Name">Mail Id</label>
                       <input type="email" placeholder="example@gmail.com" name="lname">
                   </div>
               </div>
 
               
-              <div class="form-group">
-                  <label for="exampleInputEmail1">Enter DOB*</label>
-                  <input type="date"  class="form-control">
+              <div class="form-row row">
+               <div class="form-group col-lg-11 col-md-12">
+                <label for="exampleInputEmail1">Enter DOB*</label>
+                  <input type="date"  class="form-control"/>
+                </div>
               </div>
 
 
-              <div class="form-row">
-                  <div class="form-group col-md-6">
+              <div class="form-row row">
+                  <div class="form-group col-lg-5 col-md-12">
                       <label for="inputState">Enter Dream Destination</label>
                       <select id="inputState" class="form-control">
                         <option selected>Choose...</option>
@@ -350,19 +377,19 @@
                   </div>
 
                   
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-lg-6 col-md-12">
                       <label for="inputState">Your Bucket List</label>
                       <label for="exampleInputEmail1"><textarea name="bucketlist" id="" cols="30" rows="10" placeholder="Enter three places"></textarea></label>
                       <input type="text"  class="form-control">
                   </div>
 
               </div>
-                <div class="form-row">
-              <div class="form-group col-md-6  file-select">
+                <div class="form-row row">
+              <div class="form-group col-lg-5 col-md-12  file-select">
                   <label for="exampleInputEmail1">Attach Photo (if any)</label>
                   <input type="file"  class="form-control">
               </div>
-              <div class="form-group col-md-6  file-select">
+              <div class="form-group col-lg-6 col-md-12  file-select">
                   <label for="exampleInputEmail1">Any Blogs</label>
                   <input type="text" placeholder="" name="blogs">
               </div>
@@ -371,32 +398,109 @@
               <div class="button-container">
                   <button type="submit" class="btn submit-btn">Submit</button>
               </div>
+           
           </form>
-                     
+        </div>
+    </div>                     
                     </section>
                 
 
 
                   
     <!---------------------View My rating------------------------------>
-                    <section class="tab-section" id="c2" data-tab-content>    
-                       <div style="box-sizing: border-box !important;">
+                    <section class="tab-section" id="c3" data-tab-content>    
+                       <!-- <div style="box-sizing: border-box !important;">
                         <div class="rating-box col-lg-6">
                             <h5><img src="images/logo.png" alt="">Your Atithi Rating is:
                             
                             </h5>
                     </div>      
+                </div> -->
+                <div class="show-review-container">
+                    <img src="images/logo.png" alt="">
+                    <h1>4/5</h1>
+                    <h4>Your Atithi Rating</h4>
+                    <img src="images/party_popper.gif" class="popper" alt="">
+                    <img src="images/party_popper.gif" class="popper2" alt="">
                 </div>
                     </section>
     
-                    <!-- <section class=" tab-section" id="c4" data-tab-content>    
+                    <section class=" tab-section" id="c4" data-tab-content>    
                       
-                                    
+                        <h4 style="text-align: center;font-family: 'Poppins', sans-serif;">Feedback Parameters</h4>
+                        <br>
+                         <table class="table table-bordered rating-table">
+                             <thead class="thead-dark">
+                                 <tr>
+                                   <th scope="col">Sr No.</th>
+                                   <th scope="col">Name of facility</th>
+                                   <th scope="col">Address</th>
+                                   <th scope="col">Hospitable</th>
+                                   <th scope="col">Harmonious</th>
+                                   <th scope="col">Advantageous</th>
+                                   <th scope="col">Compatible</th>
+                                   <th scope="col">Hygenic</th>
+                                 </tr>
+                               </thead>
+                             <tbody>
+                               <tr>
+                                 <th scope="row">1</th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">2</th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">3</th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">4</th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">5</th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                               </tr>
+                             </tbody>
+                           </table>
+         
                                  
                       
                       
                       
-                    </section> -->
+                    </section>
 
                     <!-- <section class=" tab-section" id="c5" data-tab-content>    
                       

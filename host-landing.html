@@ -34,7 +34,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+<style>
+   options{
+        font-family: 'poppins',sans-serif;
+    }
+</style>
 </head>
 
 <body class="header_sticky">
@@ -278,11 +282,11 @@
             <div class="col-lg-3">
                      
                     <ul class="tabs">
-                        <!-- <li data-tab-target="#c1" class="active tab">Login</li> -->
-                        <li data-tab-target="#c2" class="active tab">My Profile</li>
+                        <li data-tab-target="#c1" class="active tab">Home</li>
+                        <li data-tab-target="#c2" class=" tab">My Profile</li>
                         <li data-tab-target="#c3" class="tab">Rate My Atithi</li>
                    
-                        <li data-tab-target="#c4" class="tab" id="packages">View My Atithi Rating</li>
+                        <li data-tab-target="#c4" class="tab" id="packages">View Atithi Rating</li>
                         <li data-tab-target="#c5" class="tab">View Reports</li>
                     </ul>
                     
@@ -293,35 +297,49 @@
                  
                 <div class="tab-content">
 
-                    <!-- <section class=" tab-section active" id="c1" data-tab-content>    
-                        <h1>t1</h1>
-                        <button type="button" class="btn btn-primary"id="packages">
+                    <section class=" tab-section active" id="c1" data-tab-content>    
+                        <section class="welcome">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h1>Welcome to <span> Atithi Advisor </span></h1>
+                                </div>
+                       
+                                <p class="description">The other side of the story. One of its kind platform where you can review your esteemed guest. Not just reviewing but you can make their stay more pleasant by knowing the background of the guest, his personal details, his past stay experience’s written by Host like you. Isnt it interesting?  Please join this mission to make Travel industry more interesting and more personalized for the guest and help many host like yours to serve our Atithi better. </p>
+                       
+                                <div class="button-container">
+                                  
+                                    <a href="#" class="button">Click for Assistance</a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <button type="button" class="btn btn-primary"id="packages">
                            View my rating
                           </button>
                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Atithi Rating</button>
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm1">Host Rating</button>
-                    </section> -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm1">Host Rating</button> -->
+                    </section>
                 
 
 <!--------------------------MY PROFILE----------------------------------->
 
-                    <section class=" tab-section active" id="c2" data-tab-content>    
+                    <section class=" tab-section " id="c2" data-tab-content>    
                         <div class="form-container">
                             <div class="container">
                       
                               <h1 style="font-family: 'Poppins', sans-serif !important "><span style="color: #ea7a27;">Host </span>Profile</h1>
                       
                               <form>
-                                     <div class="form-row">
-                                      <div class="form-group col-md-12">
+                                     <div class="form-row row">
+                                      
+                                        <div class="form-group col-lg-11 col-md-12">
                                           <label for="exampleInputEmail1">Business Name *</label>
                                           <input type="text" class="form-control" placeholder="Enter Business name">
                                       </div>
                       
                                      
                                       </div>
-                                      <div class="form-row">
-                                        <div class="form-group file-select col-md-12">
+                                      <div class="form-row row">
+                                        <div class="form-group file-select col-lg-11 col-md-12">
                                             <label for="exampleFormControlFile1">Attach min 2 Photo *</label>
                                             <div class="d-flex align-item-center">
                                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -329,29 +347,29 @@
                                             </div>
                                         </div>
                                       </div>
-                      
-                                      <div class="form-group">
+                                     <div class="form-row row">
+                                      <div class="form-group  col-lg-11 col-md-12">
                                           <label for="exampleInputEmail1">Business Address*</label>
                                           <input type="text" class="form-control" placeholder="Enter Business address">
                                       </div>
-                      
-                                      <div class="form-row">
-                                          <div class="form-group col-md-6 col-sm-12">
+                                    </div>
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12">
                                               <label for="Name">Location*</label>
                                               <input type="email" name="fname">
                                           </div>
-                                          <div class="form-group col-md-6 col-sm-12">
+                                          <div class="form-group col-lg-6 col-md-12">
                                               <label for="Name">Pincode*</label>
                                               <input type="text" name="lname">
                                           </div>
                                       </div>
                       
-                                      <div class="form-row">
-                                          <div class="form-group col-md-6">
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12 ">
                                               <label for="Name">Phone Number 1 *</label>
                                               <input type="text" placeholder="+91 000000000" name="lname" required  pattern="[1-9]{1}[0-9]{9}">
                                           </div>
-                                          <div class="form-group col-md-6">
+                                          <div class="form-group col-lg-6 col-md-12">
                                               <label for="Name">Phone Number 2 *</label>
                                               <input type="text" placeholder="+91 000000000" name="lname"  pattern="[1-9]{1}[0-9]{9}">
                                           </div>
@@ -363,18 +381,18 @@
                                           <input type="text"  placeholder="xyz.com" class="form-control">
                                       </div> -->
                       
-                                      <div class="form-row">
-                                          <div class="form-group col-md-6">
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12">
                                               <label for="Name">Email Id *</label>
                                               <input type="email" placeholder="example@gmail.com" name="fname">
                                           </div>
-                                          <div class="form-group col-md-6">
+                                          <div class="form-group col-lg-6 col-md-12">
                                               <label for="exampleInputEmail1">Website (if any)</label>
                                                <input type="text"  placeholder="xyz.com" class="form-control">
                                           </div>
                                       </div>
-                                      <div class="form-row">
-                                          <div class="form-group col-lg-6 col-md-12">
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12">
                                               <label for="inputState">Legal Proof of Hotel *</label>
                                               <select id="inputState" class="form-control">
                                                 <option selected>Choose...</option>
@@ -393,12 +411,12 @@
                                           </div>
                       
                                       </div>
-                                    <div class="form-row">
-                                      <div class="form-group col-md-6">
+                                    <div class="form-row row">
+                                      <div class="form-group col-lg-5 col-md-12">
                                           <label for="exampleInputEmail1">Contact person name *</label>
                                           <input type="email" class="form-control">
                                       </div>
-                                      <div class="form-group col-md-6">
+                                      <div class="form-group col-lg-6 col-md-12">
                                           <label for="inputState">Designation *</label>
                                           <select id="inputState" class="form-control">
                                             <option selected>Choose...</option>
@@ -412,31 +430,31 @@
                                       </div>
                                   </div>
                                   
-                                      <div class="form-row">
-                                        
-                                          <div class="form-group col-md-6">
-                                          <label for="exampleInputEmail1">Trip Advisor Rating </label>
-                                          <input type="text"  class="form-control">
-                                      </div>
-                                      <div class="form-group col-md-6">
-                                          <label for="exampleInputEmail1">Other Rating</label>
+                                      <div class="form-row row">
+                                        <div class="form-group col-lg-5 col-md-12">
+                                            <label for="parentCompanyName">Parent Company  (If any)</label>
+                                            <input type="text" name="parentCompanyName" class="form-control">
+                                        </div>
+                                         
+                                          <div class="form-group col-lg-6 col-md-12">
+                                          <label for="exampleInputEmail1">Trip Advisor(link of hotel) </label>
                                           <input type="text"  class="form-control">
                                       </div>
                                      
                                     
                                   </div>
-                      
-                                  <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                      <label for="exampleInputEmail1">Social Media Links</label>
-                                      <input type="text"  class="form-control">
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                      <label for="parentCompanyName">Parent Company  (If any)</label>
-                                      <input type="text" name="parentCompanyName" class="form-control">
-                                  </div>
-                                
-                              </div>
+                                  <div class="form-row row">
+                                    <div class="form-group col-lg-5 col-md-12">
+                                        <label for="exampleInputEmail1">OTA Rating(paste link)</label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-12">
+                                        <label for="exampleInputEmail1">Social Media Links</label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                  
+                                </div>
+                           
                                      
                       
                                       <div class="button-container">
@@ -460,40 +478,41 @@
                               <h3 class="mini-header">First Platform for Hosts to share and get feedback on their Atithi ...!!!!</h3>
                       
                               <form>
-                      
-                                      <div class="form-group">
+                                    <div class="form-row row">
+                                      <div class="form-group col-lg-11 col-md-12">
                                           <label for="exampleInputEmail1">Atithi Name *</label>
                                           <input type="text" class="form-control" placeholder="Enter Atithi name" required>
                                       </div>
-                      
-                                      <div class="form-group">
+                                    </div>
+                                    <div class="form-row row">  
+                                    <div class="form-group col-lg-11 col-md-12">
                                           <label for="exampleInputEmail1">Address</label>
                                           <input type="text" class="form-control" placeholder="Enter address">
                                       </div>
-                      
-                                      <div class="form-row">
-                                          <div class="form-group col-md-6">
+                                    </div>
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12">
                                               <label for="Name" >State*</label>
                                               <input type="email" name="fname" required>
                                           </div>
-                                          <div class="form-group col-md-6">
+                                          <div class="form-group col-lg-6 col-md-12">
                                               <label for="Name">Pincode*</label>
                                               <input type="text" name="lname" required>
                                           </div>
                                       </div>
                       
-                                      <div class="form-row">
-                                          <div class="form-group col-md-4">
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-4 col-md-12 ">
                                               <label for="Name">Phone Number 1*</label>
                                               <input type="text" placeholder="+91 000000000" name="lname" required  pattern="[1-9]{1}[0-9]{9}">
                                           </div>
-                                          <div class="form-group col-md-4">
+                                          <div class="form-group col-lg-4 col-md-12">
                                               <label for="Name">Phone Number 2</label>
                                               <input type="text" placeholder="+91 000000000" name="lname"  pattern="[1-9]{1}[0-9]{9}">
                                           </div>
-                                          <div class="form-group col-md-4">
+                                          <div class="form-group col-lg-3 col-md-12">
                                               <label for="Name">Mail Id</label>
-                                              <input type="email" placeholder="example@gmail.com" name="lname" >
+                                              <input type="email" placeholder="exam@gmail.com" name="lname" >
                                           </div>
                                       </div>
                       
@@ -503,12 +522,12 @@
                                           <input type="text"  placeholder="xyz.com" class="form-control">
                                       </div> -->
                       
-                                      <div class="form-row">
-                                          <div class="form-group col-md-6">
+                                      <div class="form-row row">
+                                          <div class="form-group col-lg-5 col-md-12">
                                               <label for="Name">Check in Date*</label>
                                               <input type="date" name="fname" required>
                                           </div>
-                                          <div class="form-group col-md-6">
+                                          <div class="form-group col-lg-6 col-md-12">
                                               <label for="exampleInputEmail1">Check out Date*</label>
                                                <input type="date"  class="form-control" required>
                                           </div>
@@ -516,21 +535,10 @@
                       
                                     
                       
-                                      <div class="form-row">
-                                          
-                                          <div class="form-group col-md-6  file-select">
-                                              <label for="exampleInputEmail1">Attach Photo (if any)</label>
-                                              <input type="file"  class="form-control">
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                              <label for="parentCompanyName">Description (If any)</label>
-                                              <textarea name="description" id="" cols="30" rows="10"></textarea>
-                                          </div>
-                                 
-                                      </div>
+                                      
                       
-                             <div class="form-row">
-                              <div class="form-group col-md-4">
+                             <div class="form-row row">
+                              <div class="form-group col-lg-4 col-md-12">
                                   <label for="exampleInputEmail1">Hospitable*</label>
                               
                                   <span class="star-rating">
@@ -542,7 +550,7 @@
                                     </span>
                                   
                               </div>
-                              <div class="form-group col-md-4">
+                              <div class="form-group col-lg-4 col-md-12">
                                   <label for="exampleInputEmail1">Harmonious*</label>
                               
                                   <span class="star-rating">
@@ -553,7 +561,7 @@
                                       <input type="radio" name="rating2" value="5"><i></i>
                                     </span>
                                   
-                              </div> <div class="form-group col-md-4">
+                              </div> <div class="form-group col-lg-3 col-md-12">
                                   <label for="exampleInputEmail1">Advantageous*</label>
                                    
                                   <span class="star-rating">
@@ -566,8 +574,8 @@
                                   
                               </div> 
                                   </div>
-                                  <div class="form-row">
-                                      <div class="form-group col-md-4">
+                                  <div class="form-row row">
+                                      <div class="form-group col-lg-4 col-md-12">
                                           <label for="exampleInputEmail1">Compatible*</label>
                                       
                                           <span class="star-rating">
@@ -579,7 +587,7 @@
                                             </span>
                                           
                                       </div>
-                                      <div class="form-group col-md-4">
+                                      <div class="form-group col-lg-4 col-md-12">
                                           <label for="exampleInputEmail1">Hygenic*</label>
                                       
                                           <span class="star-rating">
@@ -590,7 +598,12 @@
                                               <input type="radio" name="rating5" value="5"><i></i>
                                             </span>
                                           
-                                      </div>  
+                                      </div> 
+                                      <div class="form-group col-lg-3 col-md-12">
+                                        <label for="parentCompanyName">Description (If any)</label>
+                                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                     
                                   </div>
                                       <div class="button-container">
                                           <button  class=" submit-btn" id="myBtn">Submit</button>
@@ -604,103 +617,6 @@
                     </section>
     
                     <section class=" tab-section" id="c4" data-tab-content>    
-                      
-                                      <h4 style="text-align: center;font-family: 'Poppins', sans-serif;">Reviewed Data(Month Wise)</h4>
-                                      <br>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                      <p  style="font-family: 'Poppins', sans-serif;">Filter by</p>  
-                                    
-                                      <select id="inputState" class="form-control">
-                                          <option selected>Select Month</option>
-                                          <option>January</option>
-                                          <option>Febuary</option>
-                                          <option>March</option>
-                                          <option>April</option>
-                                          <option>May</option>
-                                          <option>June</option>
-                                          <option>July</option>
-                                          <option>August</option>
-                                          <option>September</option>
-                                          <option>October</option>
-                                          <option>November</option>
-                                          <option>December</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <p style="font-family: 'Poppins', sans-serif;">Check by Date</p>
-                                          <input type="date" name="fname" required>
-                                      </div>
-                                      </div>
-                                      <table class="table table-bordered rating-table" id="table">
-                                           <thead class="thead-dark">
-                                               <tr>
-                                                 <th scope="col" id="month">Month</th>
-                                                 <th scope="col" id="dateofCheckin ">Date of Check-In</th>
-                                                 <th scope="col" id="dateofEntry">Date of Entry</th>
-                                                 <th scope="col" id="nameofAtithi">Name of Atithi</th>
-                                                 <th scope="col" id="phoneNum">Phone Number</th>
-                                                 <th scope="col">Atithi Advisor Rating</th>
-                                                 <th scope="col"></th>
-                                              
-                                               </tr>
-                                             </thead>
-                                           <tbody>
-                                             <tr>
-                                               <th scope="row">1</th>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                             <td> <button type="submit" class="btn submit-btn">Details</button></td>
-                                               
-                                             </tr>
-                                             <tr>
-                                               <th scope="row">2</th>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td> <button type="submit" class="btn submit-btn">Details</button></td>
-                                             </tr>
-                                             <tr>
-                                               <th scope="row">3</th>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td> <button type="submit" class="btn submit-btn">Details</button></td>
-                                             </tr>
-                                             <tr>
-                                               <th scope="row">4</th>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td> <button type="submit" class="btn submit-btn">Details</button></td>
-                                             </tr>
-                                             <tr>
-                                               <th scope="row">5</th>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td> <button type="submit" class="btn submit-btn">Details</button></td>   
-                                             </tr>
-                                           </tbody>
-                                         </table>
-                                 
-                      
-                      
-                      
-                    </section>
-
-                    <section class=" tab-section" id="c5" data-tab-content>    
                         <h4 style="text-align: center;font-family: 'Poppins', sans-serif;">Feedback Parameters</h4>
                         <br>
                          <table class="table table-bordered rating-table">
@@ -769,6 +685,105 @@
                                </tr>
                              </tbody>
                            </table>
+
+                      
+                      
+                      
+                    </section>
+
+                    <section class=" tab-section" id="c5" data-tab-content>    
+                       
+                           <h4 style="text-align: center;font-family: 'Poppins', sans-serif;">Reviewed Data(Month Wise)</h4>
+                           <br>
+                         <div class="row">
+                           <div class="col-md-6">
+                           <p  style="font-family: 'Poppins', sans-serif;">Filter by</p>  
+                         
+                           <select id="inputState" class="form-control">
+                               <option selected>Select Month</option>
+                               <option>January</option>
+                               <option>Febuary</option>
+                               <option>March</option>
+                               <option>April</option>
+                               <option>May</option>
+                               <option>June</option>
+                               <option>July</option>
+                               <option>August</option>
+                               <option>September</option>
+                               <option>October</option>
+                               <option>November</option>
+                               <option>December</option>
+                             </select>
+                           </div>
+                           <div class="col-md-6">
+                               <p style="font-family: 'Poppins', sans-serif;">Check by Date</p>
+                               <input type="date" name="fname" required>
+                           </div>
+                           </div>
+                           <table class="table table-bordered rating-table" id="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                      <th scope="col" id="month">Month</th>
+                                      <th scope="col" id="dateofCheckin ">Date of Check-In</th>
+                                      <th scope="col" id="dateofEntry">Date of Entry</th>
+                                      <th scope="col" id="nameofAtithi">Name of Atithi</th>
+                                      <th scope="col" id="phoneNum">Phone Number</th>
+                                      <th scope="col">Atithi Advisor Rating</th>
+                                      <th scope="col"></th>
+                                   
+                                    </tr>
+                                  </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  <td> <button type="submit" class="btn submit-btn">Details</button></td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td> <button type="submit" class="btn submit-btn">Details</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td> <button type="submit" class="btn submit-btn">Details</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td> <button type="submit" class="btn submit-btn">Details</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td> <button type="submit" class="btn submit-btn">Details</button></td>   
+                                  </tr>
+                                </tbody>
+                              </table>
+                      
+           
                     </section>
                 
                 </div><!-- tab-content end -->
