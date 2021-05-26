@@ -746,7 +746,7 @@
 @media(max-width:550px){
     
     .testimonial .swiper-slide {
-      height: 500px!important;
+      height: 600px;
     }
 
     .testimonial .swiper-container {
@@ -754,12 +754,33 @@
       width: 90%;
     }
 
+	#id_work_days span {
+		width: 150px;
+		padding: 15px;
+	}
+
+	#welcomeDiv input{
+		width: 100%;
+	}	
+
+	.footer{
+		padding: 50px 15px 10px;
+	}
+
+  }
+
+
+  @media (max-width:450px){
+	#id_work_days span {
+		width: 130px;
+	}
   }
 
   @media (max-width:375px){
 	.testimonial .swiper-slide{
-	  height: 550px!important;
+	  height: 650px;
 	}
+
   }
 
   @media (max-width:320px){
