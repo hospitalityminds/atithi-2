@@ -767,6 +767,14 @@
 		padding: 50px 15px 10px;
 	}
 
+	.box-outlay{
+		width: 200px;
+		padding: 20px 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
   }
 
 
@@ -774,6 +782,25 @@
 	#id_work_days span {
 		width: 130px;
 	}
+
+	.box-outlay{
+		width: 180px;
+		padding: 14px 10px;
+	}
+
+	.box-outlay p{
+		font-size: 12px;
+	}
+
+  }
+
+
+  @media (max-width:450px){
+	
+	.box-outlay{
+		width: 150px;
+	}
+
   }
 
   @media (max-width:375px){
@@ -783,8 +810,12 @@
 
   }
 
-  @media (max-width:320px){
+  @media (max-width:350px){
 	.testimonial .swiper-slide{
 	  height: 600px!important;
+	}
+
+	.box-outlay{
+		width: 135px;
 	}
   }
