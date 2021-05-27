@@ -82,9 +82,10 @@
                         <ul class="menu">
 
                             <li>
-                                <a href="index.html">Home</a>
-                                
+                                <a href="index.html">Home</a>    
                             </li>
+
+                            <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
 
                             <li>
                                 <a href="Host.html">Join as Host</a>
@@ -94,58 +95,26 @@
                                 <a href="Atithi.html">Join as Atithi</a>
                                 
                             </li>
-                            <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
-                    
-                            <!-- <li class="home">
-                                <a href="Hotels.html">Hotels</a>
-                                
-                            </li>
-                            <li><a href="#">Homestays</a>
-                              
-                            </li>
-                            <li><a href="blog.html">Campsites</a>
-                                
-                            </li>
-                            <li><a href="page-about.html">Backpackers</a>
-                                
-                            </li>
-                            <li><a href="#">Others</a>
-                                <ul class="submenu">
-                                    <li><a href="view-rating.html">Treehouse</a>
-                                      
-                                    </li>
-                                    <li><a href="host-review-report.html">Igloos</a>
-                                       
-                                    </li>
-                                    <li><a href="listing-full.html">Houseboat</a>
-                                       
-                                    </li>
-
-                                </ul>
-                            </li>
-                           <li> <a href="#">Atithi</a></li> -->
                             <li>
                                 <a href="#" style="font-weight:600!important"><i class="fa fa-user-plus"></i> Log In</a>
                                 <ul class="submenu">
                                     <li>
-                                        <a data-toggle="modal" href="#popup_login">Atithi </a> 
-                                    </li>
-                                    <li>
                                         <a data-toggle="modal" href="#popup_login">Host </a> 
                                     </li>
-
+                                    <li>
+                                        <a data-toggle="modal" href="#popup_login">Atithi </a> 
+                                    </li>
                                 </ul>
                             </li>
                             <li>
                                 <a style="font-weight:600!important" ><i class="fa fa-user-plus"></i> Sign Up</a>
                                 <ul class="submenu">
                                     <li>
-                                        <a  href="atithi-signup-short.html">Atithi </a> 
-                                    </li>
-                                    <li>
                                         <a  href="host-signup-step1.html">Host </a> 
                                     </li>
-
+                                    <li>
+                                        <a  href="atithi-signup-short.html">Atithi </a> 
+                                    </li>
                                 </ul>
                             </li>
 
@@ -275,9 +244,7 @@
                         <li data-tab-target="#c2" class=" tab">My Profile</li>
                         <li data-tab-target="#c3" class="tab">View My Rating</li>
                         <li data-tab-target="#c4" class="tab">View Detailed rating </li>
-                      
-                   
-                     
+                        <li data-tab-target="#c5" class="tab">Add Testimonials </li>
                     </ul>
                     
             </div> 
@@ -351,40 +318,42 @@
                   </div>
               </div>
 
-              
               <div class="form-row row">
-               <div class="form-group col-lg-11 col-md-12">
-                <label for="exampleInputEmail1">Enter DOB*</label>
-                  <input type="date"  class="form-control"/>
+                <div class="form-group col-lg-5 col-md-12  file-select">
+                    <label for="exampleInputEmail1">Attach Photo (if any)</label>
+                    <input type="file"  class="form-control">
                 </div>
-              </div>
+                <div class="form-group col-lg-6 col-md-12  file-select">
+                    <label for="exampleInputEmail1">Enter DOB*</label>
+                      <input type="date"  class="form-control"/>
+                </div>
+            </div>
 
 
               <div class="form-row row">
                   <div class="form-group col-lg-5 col-md-12">
                       <label for="inputState">Enter Dream Destination</label>
-                      <label for="exampleInputEmail1"><textarea name="bucketlist" id="" cols="30" rows="10" placeholder="Enter three places"></textarea></label>
+                      <input type="text" placeholder="Enter three places"  class="form-control">
+                      <input type="text"  class="form-control">
                       <input type="text"  class="form-control">
                   </div>
 
                   
                   <div class="form-group col-lg-6 col-md-12">
                       <label for="inputState">Your Bucket List</label>
-                      <label for="exampleInputEmail1"><textarea name="bucketlist" id="" cols="30" rows="10" placeholder="Enter three places"></textarea></label>
+                      <input type="text" placeholder="Enter three places"  class="form-control">
+                      <input type="text"  class="form-control">
                       <input type="text"  class="form-control">
                   </div>
+              </div>
 
+              <div class="form-row row">
+                <div class="form-group col-lg-11 col-md-12">
+                    <label for="exampleInputEmail1">Any Blogs</label>
+                    <input type="text" placeholder="" name="blogs">
+                </div>
               </div>
-                <div class="form-row row">
-              <div class="form-group col-lg-5 col-md-12  file-select">
-                  <label for="exampleInputEmail1">Attach Photo (if any)</label>
-                  <input type="file"  class="form-control">
-              </div>
-              <div class="form-group col-lg-6 col-md-12  file-select">
-                  <label for="exampleInputEmail1">Any Blogs</label>
-                  <input type="text" placeholder="" name="blogs">
-              </div>
-          </div>
+                
 
               <div class="button-container">
                   <button type="submit" class="btn submit-btn">Submit</button>
@@ -401,19 +370,17 @@
     <!---------------------View My rating------------------------------>
                     <section class="tab-section" id="c3" data-tab-content>    
                        <!-- <div style="box-sizing: border-box !important;">
-                        <div class="rating-box col-lg-6">
-                            <h5><img src="images/logo.png" alt="">Your Atithi Rating is:
-                            
-                            </h5>
-                    </div>      
-                </div> -->
-                <div class="show-review-container">
-                    <img src="images/logo.png" alt="">
-                    <h1>4/5</h1>
-                    <h4>Your Atithi Rating</h4>
-                    <img src="images/party_popper.gif" class="popper" alt="">
-                    <img src="images/party_popper.gif" class="popper2" alt="">
-                </div>
+                                <div class="rating-box col-lg-6">
+                                    <h5><img src="images/logo.png" alt="">Your Atithi Rating is:</h5>
+                               </div>      
+                        </div> -->
+                        <div class="show-review-container">
+                            <img src="images/logo.png" alt="">
+                            <h1>4/5</h1>
+                            <h4>Your Atithi Rating</h4>
+                            <img src="images/party_popper.gif" class="popper" alt="">
+                            <img src="images/party_popper.gif" class="popper2" alt="">
+                        </div>
                     </section>
     
                     <section class=" tab-section" id="c4" data-tab-content>    
@@ -486,17 +453,83 @@
                                </tr>
                              </tbody>
                            </table>
-         
-                                 
-                      
-                      
-                      
                     </section>
 
-                    <!-- <section class=" tab-section" id="c5" data-tab-content>    
-                      
-                     
-                    </section> -->
+
+                    <section class=" tab-section" id="c5" data-tab-content>    
+                        
+                        <div class="form-container">
+                            <div class="container">
+                        
+                                <h1 style="font-family: 'Poppins', sans-serif !important ">Add <span style="color: #ea7a27;">Testimonials</span></h1>
+                        
+                              <form>
+                                   
+                                    <div class="form-group col-lg-11 col-md-12">
+                                        <label for="exampleInputEmail1">Enter Name</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-lg-11 col-md-12">
+                                            <label for="exampleInputEmail1">Hotel Name</label>
+                                            <input type="text" placeholder="" name="blogs">
+                                    </div>
+                                     
+                                    <div class="form-group col-lg-11 col-md-12">
+                                        <label for="exampleInputEmail1">Review</label>
+                                        <textarea name="review" id="" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                    
+                                    <div class="form-group col-lg-11 col-md-12 form-rating">
+
+                                        <label for="exampleInputEmail1">Rating</label>
+
+                                        <input type="radio" name="stars" class="star" id="star-null" />
+                                        <input type="radio" name="stars" class="star" id="star-1" />
+                                        <input type="radio" name="stars" class="star" id="star-2" />
+                                        <input type="radio" name="stars" class="star" id="star-3" />
+                                        <input type="radio" name="stars" class="star" id="star-4" checked />
+                                        <input type="radio" name="stars" class="star" id="star-5" />
+
+                                        <section>
+                                        <label for="star-1">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-2">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-3">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-4">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-5">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label> 
+                                        </section>
+                                    </div>
+                                        
+                        
+                                      <div class="button-container">
+                                          <button type="submit" class="btn submit-btn">Submit</button>
+                                      </div>
+                                   
+                                  </form>
+                                </div>
+                            </div>                     
+                    </section>
                 
                 </div><!-- tab-content end -->
 

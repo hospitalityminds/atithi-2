@@ -68,66 +68,38 @@
                             <nav id="mainnav" class="mainnav float-right">
                                 <ul class="menu">
 
+                                    <li><a href="index.html">Home</a></li>
+                                    
+                                    <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
+                                    
                                     <li>
-                                        <a href="Host.html">Join as Host</a>
-                                        
+                                        <a href="Host.html">Join as Host</a>  
                                     </li>
                                     <li>
                                         <a href="Atithi.html">Join as Atithi</a>
                                         
                                     </li>
-                                    <li><a href="whyAtithi.html">Why Atithi Advisor</a></li>
-                            
-                                    <!-- <li class="home">
-                                        <a href="Hotels.html">Hotels</a>
-                                        
-                                    </li>
-                                    <li><a href="#">Homestays</a>
-                                      
-                                    </li>
-                                    <li><a href="blog.html">Campsites</a>
-                                        
-                                    </li>
-                                    <li><a href="page-about.html">Backpackers</a>
-                                        
-                                    </li>
-                                    <li><a href="#">Others</a>
+                                    
+                                   <li>
+                                       <a href="#" style="font-weight:600!important"><i class="fa fa-user-plus"></i> Log In</a>
                                         <ul class="submenu">
-                                            <li><a href="view-rating.html">Treehouse</a>
-                                              
-                                            </li>
-                                            <li><a href="host-review-report.html">Igloos</a>
-                                               
-                                            </li>
-                                            <li><a href="listing-full.html">Houseboat</a>
-                                               
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                   <li> <a href="#">Atithi</a></li> -->
-                                    <li>
-                                        <a href="#" style="font-weight:600!important"><i class="fa fa-user-plus"></i> Log In</a>
-                                        <ul class="submenu">
-                                            <li>
-                                                <a data-toggle="modal" href="#popup_login">Atithi </a> 
-                                            </li>
                                             <li>
                                                 <a data-toggle="modal" href="#popup_login">Host </a> 
                                             </li>
-
+                                            <li>
+                                                <a data-toggle="modal" href="#popup_login">Atithi </a> 
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a style="font-weight:600!important" ><i class="fa fa-user-plus"></i> Sign Up</a>
                                         <ul class="submenu">
                                             <li>
-                                                <a  href="atithi-signup-short.html">Atithi </a> 
-                                            </li>
-                                            <li>
                                                 <a  href="host-signup-step1.html">Host </a> 
                                             </li>
-
+                                            <li>
+                                                <a  href="atithi-signup-short.html">Atithi </a> 
+                                            </li>
                                         </ul>
                                     </li>
 
@@ -229,67 +201,205 @@
            
                 </div>
 
-       <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="exampleInputEmail1">Hospitable*</label>
-        
-            <span class="star-rating">
-                <input type="radio" name="rating1" value="1"><i></i>
-                <input type="radio" name="rating1" value="2"><i></i>
-                <input type="radio" name="rating1" value="3"><i></i>
-                <input type="radio" name="rating1" value="4"><i></i>
-                <input type="radio" name="rating1" value="5"><i></i>
-              </span>
+              <div class="form-row">
+                    <div class="form-group form-rating col-md-6">
+                        <label for="exampleInputEmail1">Hospitable*</label>
+                    
+                        <input type="radio" name="stars" class="star" id="star-null" />
+                        <input type="radio" name="stars" class="star" id="star-1" checked  />
+                        <input type="radio" name="stars" class="star" id="star-2" />
+                        <input type="radio" name="stars" class="star" id="star-3" />
+                        <input type="radio" name="stars" class="star" id="star-4" />
+                        <input type="radio" name="stars" class="star" id="star-5" />
+
+                        <section>
+                            <label for="star-1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-2">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-3">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-4">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-5">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label> 
+                        </section>     
+                </div>
+
             
-        </div>
-        <div class="form-group col-md-4">
-            <label for="exampleInputEmail1">Harmonious*</label>
-        
-            <span class="star-rating">
-                <input type="radio" name="rating2" value="1"><i></i>
-                <input type="radio" name="rating2" value="2"><i></i>
-                <input type="radio" name="rating2" value="3"><i></i>
-                <input type="radio" name="rating2" value="4"><i></i>
-                <input type="radio" name="rating2" value="5"><i></i>
-              </span>
-            
-        </div> <div class="form-group col-md-4">
-            <label for="exampleInputEmail1">Advantageous*</label>
-             
-            <span class="star-rating">
-                <input type="radio" name="rating3" value="1"><i></i>
-                <input type="radio" name="rating3" value="2"><i></i>
-                <input type="radio" name="rating3" value="3"><i></i>
-                <input type="radio" name="rating3" value="4"><i></i>
-                <input type="radio" name="rating3" value="5"><i></i>
-              </span>
-            
-        </div> 
-            </div>
+                <div class="form-group form-rating col-md-6">
+                        <label for="exampleInputEmail1">Harmonious*</label>
+                    
+                        <input type="radio" name="stars1" class="star" id="star-null" />
+                        <input type="radio" name="stars1" class="star" id="star-1_1" checked  />
+                        <input type="radio" name="stars1" class="star" id="star-2_1" />
+                        <input type="radio" name="stars1" class="star" id="star-3_1" />
+                        <input type="radio" name="stars1" class="star" id="star-4_1" />
+                        <input type="radio" name="stars1" class="star" id="star-5_1" />
+
+                        <section>
+                            <label for="star-1_1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-2_1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-3_1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-4_1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label>
+                            <label for="star-5_1">
+                                <svg width="255" height="240" viewBox="0 0 51 48">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                </svg>
+                            </label> 
+                    </section>          
+                </div> 
+            </div>    
+
+
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group form-rating col-md-6">
+                    <label for="exampleInputEmail1">Advantageous*</label>
+                    
+                            <input type="radio" name="stars" class="star" id="star-null" />
+                                                <input type="radio" name="stars" class="star" id="star-1" checked  />
+                                                <input type="radio" name="stars" class="star" id="star-2" />
+                                                <input type="radio" name="stars" class="star" id="star-3" />
+                                                <input type="radio" name="stars" class="star" id="star-4" />
+                                                <input type="radio" name="stars" class="star" id="star-5" />
+
+                                                <section>
+                                                <label for="star-1">
+                                                    <svg width="255" height="240" viewBox="0 0 51 48">
+                                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                                    </svg>
+                                                </label>
+                                                <label for="star-2">
+                                                    <svg width="255" height="240" viewBox="0 0 51 48">
+                                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                                    </svg>
+                                                </label>
+                                                <label for="star-3">
+                                                    <svg width="255" height="240" viewBox="0 0 51 48">
+                                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                                    </svg>
+                                                </label>
+                                                <label for="star-4">
+                                                    <svg width="255" height="240" viewBox="0 0 51 48">
+                                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                                    </svg>
+                                                </label>
+                                                <label for="star-5">
+                                                    <svg width="255" height="240" viewBox="0 0 51 48">
+                                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                                    </svg>
+                                                </label> 
+                                                </section>        
+                </div> 
+
+                <div class="form-group form-rating col-md-6">
                     <label for="exampleInputEmail1">Compatible*</label>
                 
-                    <span class="star-rating">
-                        <input type="radio" name="rating4" value="1"><i></i>
-                        <input type="radio" name="rating4" value="2"><i></i>
-                        <input type="radio" name="rating4" value="3"><i></i>
-                        <input type="radio" name="rating4" value="4"><i></i>
-                        <input type="radio" name="rating4" value="5"><i></i>
-                      </span>
-                    
+                            <input type="radio" name="stars" class="star" id="star-null" />
+                                        <input type="radio" name="stars" class="star" id="star-1" checked  />
+                                        <input type="radio" name="stars" class="star" id="star-2" />
+                                        <input type="radio" name="stars" class="star" id="star-3" />
+                                        <input type="radio" name="stars" class="star" id="star-4" />
+                                        <input type="radio" name="stars" class="star" id="star-5" />
+
+                                    <section>
+                                        <label for="star-1">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-2">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-3">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-4">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label>
+                                        <label for="star-5">
+                                            <svg width="255" height="240" viewBox="0 0 51 48">
+                                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                                            </svg>
+                                        </label> 
+                                </section>                  
                 </div>
-                <div class="form-group col-md-4">
+                </div>
+
+                <div class="form-group form-rating col-md-6">
                     <label for="exampleInputEmail1">Hygenic*</label>
                 
-                    <span class="star-rating">
-                        <input type="radio" name="rating5" value="1"><i></i>
-                        <input type="radio" name="rating5" value="2"><i></i>
-                        <input type="radio" name="rating5" value="3"><i></i>
-                        <input type="radio" name="rating5" value="4"><i></i>
-                        <input type="radio" name="rating5" value="5"><i></i>
-                      </span>
-                    
+                        <input type="radio" name="stars" class="star" id="star-null" />
+                        <input type="radio" name="stars" class="star" id="star-1" checked  />
+                        <input type="radio" name="stars" class="star" id="star-2" />
+                        <input type="radio" name="stars" class="star" id="star-3" />
+                        <input type="radio" name="stars" class="star" id="star-4" />
+                        <input type="radio" name="stars" class="star" id="star-5" />
+
+                        <section>
+                        <label for="star-1">
+                            <svg width="255" height="240" viewBox="0 0 51 48">
+                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                            </svg>
+                        </label>
+                        <label for="star-2">
+                            <svg width="255" height="240" viewBox="0 0 51 48">
+                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                            </svg>
+                        </label>
+                        <label for="star-3">
+                            <svg width="255" height="240" viewBox="0 0 51 48">
+                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                            </svg>
+                        </label>
+                        <label for="star-4">
+                            <svg width="255" height="240" viewBox="0 0 51 48">
+                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                            </svg>
+                        </label>
+                        <label for="star-5">
+                            <svg width="255" height="240" viewBox="0 0 51 48">
+                            <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                            </svg>
+                        </label> 
+                        </section>                    
                 </div>  
             </div>
                 <div class="button-container">
