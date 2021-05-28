@@ -266,17 +266,26 @@
 
         <a href="host-signup.html">
             <div class="box-outlay">
-                <p>BagPackers Stay</p> 
+                <p> Backpackers Stay</p> 
                 <i class="fas fa-suitcase"></i>
             </div>
         </a>
         
-        <a href="host-signup.html">
-            <div class="box-outlay">
-                <p>Specialty lodging</p> 
-                <i class="fas fa-question"></i>
-            </div> 
-        </a>    
+        <div class="box-outlay">
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <p>Specialty lodging</p> 
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="host-signup.html">Treehouse</a>
+                    <a class="dropdown-item" href="host-signup.html">Igloo</a>
+                    <a class="dropdown-item" href="host-signup.html">Houseboat</a>
+                    
+                </div>
+            </div>
+            <i class="fas fa-igloo"></i>
+        </div> 
+    
             
         <!-- <div class="box-outlay">
             <div class="dropdown">
@@ -912,7 +921,7 @@
 
 
     <!-- Swiper -->
-    <div class="swiper-container testi-container">
+    <div class="swiper-container test-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
 
@@ -1357,7 +1366,7 @@
     <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.places-container', {
          loop: true,
          breakpoints: {
              300: {
@@ -1390,14 +1399,15 @@
 
 
     <script>
-        var swiper = new Swiper('.testi-container', {
+        var swiper = new Swiper('.test-container', {
         loop: true,
         centeredSlides: true,
         slidesPerView: 1,
         spaceBetween: 30,
         autoplay: {
-            delay: 4000,
+            delay: 3000,
         },
+        
         pagination: {
             el: '.swiper-pagination',
         },  
