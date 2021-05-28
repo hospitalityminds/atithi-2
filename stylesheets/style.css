@@ -3783,7 +3783,7 @@ form{
 	color: #000;
   }
   .tracker .checked {
-	color: orange;
+	color: var(--main-color);
   }
   /* Hide all steps by default: */
 .tab {
@@ -5032,20 +5032,61 @@ section.flat-row.section-product{
 	stroke: var(--main-color);
   }
 
-
-
+   /* **************************   2rd radio  ************************************** */
   
 
-
-  #star-1_1:checked ~ section [for=star-1_1] svg, #star-2_1:checked ~ section [for=star-1_1] svg, #star-2_1:checked ~ section [for=star-2_1] svg, #star-3_1:checked ~ section [for=star-1_1] svg, #star-3_1:checked ~ section [for=star-2_1] svg, #star-3_1:checked ~ section [for=star-3_1] svg, #star-4_1:checked ~ section [for=star-1_1] svg, #star-4_1:checked ~ section [for=star-2_1] svg, #star-4_1:checked ~ section [for=star-3_1] svg, #star-4_1:checked ~ section [for=star-4_1] svg, #star-5_1:checked ~ section [for=star-1_1] svg, #star-5_1:checked ~ section [for=star-2_1] svg, #star-5_1:checked ~ section [for=star-3_1] svg, #star-5_1:checked ~ section [for=star-4_1] svg, #star-5_1:checked ~ section [for=star-5_1] svg {
+   #star-1_2:checked ~ section [for=star-1_2] svg, #star-2_2:checked ~ section [for=star-1_2] svg, #star-2_2:checked ~ section [for=star-2_2] svg, #star-3_2:checked ~ section [for=star-1_2] svg, #star-3_2:checked ~ section [for=star-2_2] svg, #star-3_2:checked ~ section [for=star-3_2] svg, #star-4_2:checked ~ section [for=star-1_2] svg, #star-4_2:checked ~ section [for=star-2_2] svg, #star-4_2:checked ~ section [for=star-3_2] svg, #star-4_2:checked ~ section [for=star-4_2] svg, #star-5_2:checked ~ section [for=star-1_2] svg, #star-5_2:checked ~ section [for=star-2_2] svg, #star-5_2:checked ~ section [for=star-3_2] svg, #star-5_2:checked ~ section [for=star-4_2] svg, #star-5_2:checked ~ section [for=star-5_2] svg {
 	transform: scale(1);
   }
 
-  #star-1_1:checked ~ section [for=star-1_1] svg path, #star-2_1:checked ~ section [for=star-1_1] svg path, #star-2_1:checked ~ section [for=star-2_1] svg path, #star-3_1:checked ~ section [for=star-1_1] svg path, #star-3_1:checked ~ section [for=star-2_1] svg path, #star-3_1:checked ~ section [for=star-3_1] svg path, #star-4_1:checked ~ section [for=star-1_1] svg path, #star-4_1:checked ~ section [for=star-2_1] svg path, #star-4_1:checked ~ section [for=star-3_1] svg path, #star-4_1:checked ~ section [for=star-4_1] svg path, #star-5_1:checked ~ section [for=star-1_1] svg path, #star-5_1:checked ~ section [for=star-2_1] svg path, #star-5_1:checked ~ section [for=star-3_1] svg path, #star-5_1:checked ~ section [for=star-4_1] svg path, #star-5_1:checked ~ section [for=star-5_1] svg path {
+  #star-1_2:checked ~ section [for=star-1_2] svg path, #star-2_2:checked ~ section [for=star-1_2] svg path, #star-2_2:checked ~ section [for=star-2_2] svg path, #star-3_2:checked ~ section [for=star-1_2] svg path, #star-3_2:checked ~ section [for=star-2_2] svg path, #star-3_2:checked ~ section [for=star-3_2] svg path, #star-4_2:checked ~ section [for=star-1_2] svg path, #star-4_2:checked ~ section [for=star-2_2] svg path, #star-4_2:checked ~ section [for=star-3_2] svg path, #star-4_2:checked ~ section [for=star-4_2] svg path, #star-5_2:checked ~ section [for=star-1_2] svg path, #star-5_2:checked ~ section [for=star-2_2] svg path, #star-5_2:checked ~ section [for=star-3_2] svg path, #star-5_2:checked ~ section [for=star-4_2] svg path, #star-5_2:checked ~ section [for=star-5_2] svg path {
 	fill: var(--main-color);
 	stroke: var(--main-color);
   }
   
+
+
+     /* **************************   3rd radio  ************************************** */
+  
+
+	 #star-1_3:checked ~ section [for=star-1_3] svg, #star-2_3:checked ~ section [for=star-1_3] svg, #star-2_3:checked ~ section [for=star-2_3] svg, #star-3_3:checked ~ section [for=star-1_3] svg, #star-3_3:checked ~ section [for=star-2_3] svg, #star-3_3:checked ~ section [for=star-3_3] svg, #star-4_3:checked ~ section [for=star-1_3] svg, #star-4_3:checked ~ section [for=star-2_3] svg, #star-4_3:checked ~ section [for=star-3_3] svg, #star-4_3:checked ~ section [for=star-4_3] svg, #star-5_3:checked ~ section [for=star-1_3] svg, #star-5_3:checked ~ section [for=star-2_3] svg, #star-5_3:checked ~ section [for=star-3_3] svg, #star-5_3:checked ~ section [for=star-4_3] svg, #star-5_3:checked ~ section [for=star-5_3] svg {
+		transform: scale(1);
+	  }
+	
+	  #star-1_3:checked ~ section [for=star-1_3] svg path, #star-2_3:checked ~ section [for=star-1_3] svg path, #star-2_3:checked ~ section [for=star-2_3] svg path, #star-3_3:checked ~ section [for=star-1_3] svg path, #star-3_3:checked ~ section [for=star-2_3] svg path, #star-3_3:checked ~ section [for=star-3_3] svg path, #star-4_3:checked ~ section [for=star-1_3] svg path, #star-4_3:checked ~ section [for=star-2_3] svg path, #star-4_3:checked ~ section [for=star-3_3] svg path, #star-4_3:checked ~ section [for=star-4_3] svg path, #star-5_3:checked ~ section [for=star-1_3] svg path, #star-5_3:checked ~ section [for=star-2_3] svg path, #star-5_3:checked ~ section [for=star-3_3] svg path, #star-5_3:checked ~ section [for=star-4_3] svg path, #star-5_3:checked ~ section [for=star-5_3] svg path {
+		fill: var(--main-color);
+		stroke: var(--main-color);
+	  }
+	  
+
+
+	
+	/* **************************   4th radio  ************************************** */
+	
+
+	#star-1_4:checked ~ section [for=star-1_4] svg, #star-2_4:checked ~ section [for=star-1_4] svg, #star-2_4:checked ~ section [for=star-2_4] svg, #star-3_4:checked ~ section [for=star-1_4] svg, #star-3_4:checked ~ section [for=star-2_4] svg, #star-3_4:checked ~ section [for=star-3_4] svg, #star-4_4:checked ~ section [for=star-1_4] svg, #star-4_4:checked ~ section [for=star-2_4] svg, #star-4_4:checked ~ section [for=star-3_4] svg, #star-4_4:checked ~ section [for=star-4_4] svg, #star-5_4:checked ~ section [for=star-1_4] svg, #star-5_4:checked ~ section [for=star-2_4] svg, #star-5_4:checked ~ section [for=star-3_4] svg, #star-5_4:checked ~ section [for=star-4_4] svg, #star-5_4:checked ~ section [for=star-5_4] svg {
+		transform: scale(1);
+	}
+
+	#star-1_4:checked ~ section [for=star-1_4] svg path, #star-2_4:checked ~ section [for=star-1_4] svg path, #star-2_4:checked ~ section [for=star-2_4] svg path, #star-3_4:checked ~ section [for=star-1_4] svg path, #star-3_4:checked ~ section [for=star-2_4] svg path, #star-3_4:checked ~ section [for=star-3_4] svg path, #star-4_4:checked ~ section [for=star-1_4] svg path, #star-4_4:checked ~ section [for=star-2_4] svg path, #star-4_4:checked ~ section [for=star-3_4] svg path, #star-4_4:checked ~ section [for=star-4_4] svg path, #star-5_4:checked ~ section [for=star-1_4] svg path, #star-5_4:checked ~ section [for=star-2_4] svg path, #star-5_4:checked ~ section [for=star-3_4] svg path, #star-5_4:checked ~ section [for=star-4_4] svg path, #star-5_4:checked ~ section [for=star-5_4] svg path {
+		fill: var(--main-color);
+		stroke: var(--main-color);
+	}
+
+
+
+	/* **************************   5th radio  ************************************** */
+	
+
+	#star-1_5:checked ~ section [for=star-1_5] svg, #star-2_5:checked ~ section [for=star-1_5] svg, #star-2_5:checked ~ section [for=star-2_5] svg, #star-3_5:checked ~ section [for=star-1_5] svg, #star-3_5:checked ~ section [for=star-2_5] svg, #star-3_5:checked ~ section [for=star-3_5] svg, #star-4_5:checked ~ section [for=star-1_5] svg, #star-4_5:checked ~ section [for=star-2_5] svg, #star-4_5:checked ~ section [for=star-3_5] svg, #star-4_5:checked ~ section [for=star-4_5] svg, #star-5_5:checked ~ section [for=star-1_5] svg, #star-5_5:checked ~ section [for=star-2_5] svg, #star-5_5:checked ~ section [for=star-3_5] svg, #star-5_5:checked ~ section [for=star-4_5] svg, #star-5_5:checked ~ section [for=star-5_5] svg {
+		transform: scale(1);
+	}
+
+	#star-1_5:checked ~ section [for=star-1_5] svg path, #star-2_5:checked ~ section [for=star-1_5] svg path, #star-2_5:checked ~ section [for=star-2_5] svg path, #star-3_5:checked ~ section [for=star-1_5] svg path, #star-3_5:checked ~ section [for=star-2_5] svg path, #star-3_5:checked ~ section [for=star-3_5] svg path, #star-4_5:checked ~ section [for=star-1_5] svg path, #star-4_5:checked ~ section [for=star-2_5] svg path, #star-4_5:checked ~ section [for=star-3_5] svg path, #star-4_5:checked ~ section [for=star-4_5] svg path, #star-5_5:checked ~ section [for=star-1_5] svg path, #star-5_5:checked ~ section [for=star-2_5] svg path, #star-5_5:checked ~ section [for=star-3_5] svg path, #star-5_5:checked ~ section [for=star-4_5] svg path, #star-5_5:checked ~ section [for=star-5_5] svg path {
+		fill: var(--main-color);
+		stroke: var(--main-color);
+	}
+	
   
 
   .form-rating .star{
